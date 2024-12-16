@@ -1,27 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Blinking Cursor Effect */
+.blink-animation {
+  animation: blink 0.8s step-end infinite;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* 3D Profile Image and Shadow */
+.profile-image {
+  position: relative;
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+  transition: transform 0.5s ease-in-out;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.profile-image:hover {
+  transform: perspective(1000px) rotateY(15deg) rotateX(15deg);
 }
+
+.profile-image::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 3D Effect on Hover */
+.profile-image img {
+  transition: transform 0.5s ease-in-out;
+}
+
+.profile-image:hover img {
+  transform: scale(1.05) rotateZ(5deg);
+}
+
