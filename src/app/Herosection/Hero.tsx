@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
 import { BsDiscord } from 'react-icons/bs';
@@ -47,14 +47,14 @@ const HeroSection = () => {
       clearInterval(typingInterval);
       clearInterval(deletingInterval);
     };
-  }, [currentPhrase, isTyping, currentIndex]);
+  }, [currentPhrase, isTyping, currentIndex]); // Add all dependencies here
 
   return (
     <section className="relative bg-white text-gray-800 h-auto flex flex-col-reverse md:flex-row items-center justify-center pt-12 pb-8 md:pt-24 md:pb-16" id='hero'>
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
         {/* Left Section (Text & Buttons) */}
         <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
-          <h1 className="text-4xl md:text-6xl font-extrabold">Hi, I'm Ahmed</h1>
+          <h1 className="text-4xl md:text-6xl font-extrabold">Hi I&apos;m Ahmed</h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-blue-600">
             {currentPhrase}
             <span className="blink-animation">|</span>
@@ -98,7 +98,7 @@ const HeroSection = () => {
               download
               className="px-6 py-3 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600 transition duration-300"
             >
-              Download CV
+              Explore CV
             </a>
             <a
               href="https://discord.com/users/braveboy0675_78344"

@@ -50,7 +50,7 @@ const AboutSection = () => {
             >
               <h3 className="text-2xl font-semibold text-gray-800">About Me</h3>
               <p className="text-lg text-gray-600">
-                I'm a web developer passionate about crafting beautiful and functional digital experiences.
+                I&apos;m a web developer passionate about crafting beautiful and functional digital experiences.
               </p>
             </motion.div>
 
@@ -63,7 +63,7 @@ const AboutSection = () => {
             >
               <h3 className="text-2xl font-semibold text-gray-800">My Journey</h3>
               <p className="text-lg text-gray-600">
-                With years of experience, I've honed my skills in web development to create seamless user experiences.
+                With years of experience I&apos;ve honed my skills in web development to create seamless user experiences.
               </p>
             </motion.div>
 

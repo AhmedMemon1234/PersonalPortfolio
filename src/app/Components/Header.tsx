@@ -39,7 +39,7 @@ const Header = () => {
             target="_blank"
             className="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-300"
           >
-            Download My CV
+            Explore My CV
           </a>
         </nav>
 
@@ -74,7 +74,7 @@ const Header = () => {
                 target="_blank"
                 className="block text-lg font-medium bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition duration-300"
               >
-                Download My CV
+                Explore My CV
               </a>
             </li>
           </ul>
